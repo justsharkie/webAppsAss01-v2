@@ -1,22 +1,7 @@
-<style>
-    .card {
-        margin-top: 10px;
-        margin-left: 25px;
-        box-shadow: 5px 5px 15px #b3b3b3;
-    }
-    
-    .image {
-        height: 350px;
-        width: auto;
-        margin-top: 20px;
-    }
-</style>
-   
-
-<section class="card col-sm-6">
+<section class="card col-sm-12 offset-1">
     <div class="row">
         <div class="col-sm-4">
-            <img ng-src="{{book.image}}" alt="">
+            <img ng-src="{{book.image}}" alt="" class="image">
         </div>
         <div class="card-block col-sm-8">
             <h4 class="card-title">{{book.title}}</h4>
