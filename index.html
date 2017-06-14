@@ -14,15 +14,16 @@
         }
         .list-group {
             margin-top: 10px;
-            margin-left: 15px;
+            float: left;
         }
         .list-group-item {
             margin-left: 25px;
+            font-size: 20px;
         }
         .card {
             margin-top: 10px;
-            margin-left: 25px;
             box-shadow: 5px 5px 15px #b3b3b3;
+            clear: both;
         }
         .image {
             height: 350px;
@@ -43,16 +44,70 @@
     <h1 class="h1 container-fluid text-center text-white" id="topbar">r/fantasy Top 10 Fantasy Standalones (2017)</h1>
     <!-- sidebar -->
     <section class="row">
-        <ul class="list-group col-sm-3">
+        <ul class="list-group col-sm-2">
             <a ng-href="/#!/details/1">
                 <li class="list-group-item list-group-item-action">
-                    <h5>{{book.title}}</h5>
-                    <h6 class="text-muted">{{book.author}}</h6>
+                    <h5>Good Omens</h5>
+                    <h6 class="text-muted">Terry Pratchett, Neil Gaiman</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/2">
+                <li class="list-group-item list-group-item-action">
+                    <h5>Jonathan Strange &amp; Mr Norrell</h5>
+                    <h6 class="text-muted">Susannah Clarke</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/3">
+                <li class="list-group-item list-group-item-action">
+                    <h5>American Gods</h5>
+                    <h6 class="text-muted">Neil Gaiman</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/4">
+                <li class="list-group-item list-group-item-action">
+                    <h5>The Goblin Emperor</h5>
+                    <h6 class="text-muted">Katherine Addison</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/5">
+                <li class="list-group-item list-group-item-action">
+                    <h5>Uprooted</h5>
+                    <h6 class="text-muted">Naomi Novik</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/6">
+                <li class="list-group-item list-group-item-action">
+                    <h5>The Lions of Al-Rasson</h5>
+                    <h6 class="text-muted">Guy Gavriel Kay</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/7">
+                <li class="list-group-item list-group-item-action">
+                    <h5>Tigana</h5>
+                    <h6 class="text-muted">Guy Gavriel Kay</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/8">
+                <li class="list-group-item list-group-item-action">
+                    <h5>The Hobbit</h5>
+                    <h6 class="text-muted">J.R.R Tolkien</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/9">
+                <li class="list-group-item list-group-item-action">
+                    <h5>Warbreaker</h5>
+                    <h6 class="text-muted">Brandon Sanderson</h6>
+                </li>
+            </a>
+            <a ng-href="/#!/details/10">
+                <li class="list-group-item list-group-item-action">
+                    <h5>The Heroes</h5>
+                    <h6 class="text-muted">Joe Abercrombie</h6>
                 </li>
             </a>
         </ul>
         <!-- insert card using angular -->
-        <div ng-view></div>
+        <div ng-view class="col-sm-8"></div>
     </section>
 
     <!-- import javascript -->
