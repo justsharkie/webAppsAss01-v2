@@ -26,12 +26,10 @@ angular
                 })[0]
             })
     })
-    .controller('AllDetailCtrl', function($scope, $routeParams, $http){
-        $scope.itemId = $routeParams.itemId
-        $scope.showAll = true
+    .controller('AllDetailCtrl', function($scope, $http){
         $http
             .get('/data/books.json')
-            .then(function(res){
-                $scope.book = res.data
+            .then(({data}) => {
+                $scope.books = data
             })
     })
